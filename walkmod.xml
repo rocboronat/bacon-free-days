@@ -1,0 +1,11 @@
+<!DOCTYPE walkmod PUBLIC "-//WALKMOD//DTD"  "http://www.walkmod.com/dtd/walkmod-1.1.dtd" >
+<walkmod>
+  <plugins>
+  <plugin groupId="org.walkmod" artifactId="walkmod-imports-cleaner-plugin" version="[2.0, 3.0)" />
+  </plugins>
+  <chain name="example-chain" >
+    <reader path="app/src/main/java" />
+    <transformation type="walkmod:commons:import-cleaner" />
+    <writer path="app/src/main/java"/>
+  </chain>
+</walkmod>
